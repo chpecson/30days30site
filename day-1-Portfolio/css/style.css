@@ -1,0 +1,46 @@
+/*
+ * Make the navbar brand circle and set the background-color to blue.
+ */
+
+#brand-logo {
+  background-color: #08f;
+  color: #fafafa;
+  border-radius: 50%;
+  padding: 0 .2rem;
+  width: 2rem;
+}
+
+/*
+ * Remove all the margin in class row. 
+ */
+footer .row {
+  margin: 0 !important;
+}
+
+@media (min-width: 1200px) {
+  footer .row {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .row {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .row {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 576px) {
+  footer .row {
+    margin: 0 !important;
+  }
+}
+
+footer a:hover {
+  text-decoration: none;
+}
