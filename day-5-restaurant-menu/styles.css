@@ -1,0 +1,47 @@
+
+
+/*
+ * Set all image's width to have a max-width of 100%. 
+ */
+img { 
+	max-width: 100%; 
+}
+
+/*
+ * Set a gradient to an element.
+ */
+.bg-gradient {
+	background: linear-gradient(45deg, rgba(0,50,255,0.7), rgba(255,100,190,0.9)) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*
+ * Set a unique gradient to jumbotron.
+ */
+.jumbotron {
+	background: linear-gradient(rgba(255,100,190,0.9), rgba(0,50,255,0.7));
+}
+.bg-translucent {
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10rem;
+}
+
+/*
+ * Set a gradient overlay on the top images.
+ * To use this just put an element before the image as follows:
+ * <section class="bg-gradient"></section>
+ * <img src="hero.sample.png">
+ */
+.gradient-overlay {
+	background: linear-gradient(rgba(255,100,190,0.9), rgba(0,50,255,0.7));
+	padding: 31.5% 50%;
+	position: absolute;
+}
+
+/*
+ * Set the background color of the card to be translucent.
+ */
+.card {
+	background-color: rgba(255,255,255,0.7);
+}
