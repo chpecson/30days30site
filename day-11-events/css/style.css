@@ -1,0 +1,63 @@
+/*
+ * Set some elements to be in full(100%) height.
+ */
+html,
+body,
+main,
+.hero-wrapper { height: 100%; }
+
+body { position: relative; }
+
+/* ================================
+ *  Hero section
+ * ================================ 
+ */
+
+/*
+ * Put a background image in the hero section.
+ */
+.hero {
+  background: linear-gradient(45deg, rgba(50, 117, 255, 0.9) 10%, rgba(2, 255, 255, 0.95)) 90%, url("https://mdbootstrap.com/images/regular/city/img%20(17).jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.hero .bg-primary {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-radius: 4rem;
+  cursor: #fff;
+}
+.hero h1 { font-size: 350%; }
+.hero li { font-size: 150%; }
+
+/*
+ * Speakers section
+ */
+#speakers .card span { border-radius: 4rem; }
+
+/*
+ * Schedules section
+ */
+.carousel-inner img {
+  height: 85vh;
+  width: 100%;
+}
+.carousel-inner .carousel-caption {
+  background-color: rgba(255,255,255,0.8);
+  color: #000;
+  margin-bottom: 5rem;
+}
+
+#carouselSchedules .carousel-indicators li.active {
+  height: 25px;
+  max-width: 25px;
+}
+#carouselSchedules .carousel-indicators li {
+  background-color: #0275d8;
+  width: 100%;
+}
+
+/*
+ * Register section
+ */
+#register { height: 30vh !important; }

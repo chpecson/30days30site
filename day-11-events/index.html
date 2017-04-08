@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Day 11 - Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Nav section -->
+  <nav class="navbar navbar-toggleable-md navbar-dark bg-primary fixed-top" style="margin-bottom: 100px;">
+    <section class="container" id="navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-lable="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+      <a href="#" class="navbar-brand">
+				JS Conf
+			</a>
+      <section class="collapse navbar-collapse" id="collapseMenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2">
+							About
+						</a>
+          </li>
+          <li class="nav-item">
+            <a href="#speakers" class="nav-link px-2">
+							Speakers
+						</a>
+          </li>
+          <li class="nav-item">
+            <a href="#schedules" class="nav-link px-2">
+							Schedules
+						</a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </nav>
+  <!-- ./Nav section -->
+  <main>
+    <!-- Hero section -->
+    <section class="hero-wrapper" id="top">
+      <section class="hero flex-center">
+        <ul>
+          <li class="text-white">
+            <h1>JS Conf</h1>
+            <p>We talk about all things Javascript.</p>
+            <button type="button" class="btn btn-purple" data-toggle="modal" data-target="#modal-subscription">
+              Register
+            </button>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!-- ./Hero section -->
+    <!-- About section -->
+    <section class="container my-4" id="about">
+      <h2 class="text-center my-4">About</h2>
+      <section class="row" class="about">
+        <section class="col-md-6 col-sm-12">
+          <p class="flex-center text-center">
+            We will talk about all things javascript.
+            <br> From front to back, all built with the power of Javascript.
+          </p>
+        </section>
+        <section class="col-md-6 col-sm-12">
+          <ul class="list-group">
+            <li class="list-group-item btn-success text-white">
+              <i class="devicon-mongodb-plain mr-2"></i> Mongo
+            </li>
+            <li class="list-group-item btn-info">
+              Express
+              <i class="devicon-javascript-plain ml-2"></i>
+            </li>
+            <li class="list-group-item btn-pink text-white">
+              <i class="devicon-angularjs-plain mr-2"></i> Angular
+            </li>
+            <li class="list-group-item btn-dark-green text-white">
+              Node
+              <i class="devicon-nodejs-plain ml-2"></i>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <!-- ./About section -->
+    <!-- Speakers section -->
+    <section class="container my-4" id="speakers">
+      <h2 class="text-center">Speakers</h2>
+      <section class="card-deck my-4">
+        <section class="card text-center m-2">
+          <!--Card image-->
+          <div class="view overlay hm-white-slight flex-center m-2">
+            <img src="https://s5.postimg.org/6wyqregj7/mongo.png" class="img-fluid">
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+          <section class="card-block">
+            <h3 class="card-title">Joe Mongo</h3>
+            <p>
+              A DBA who specializes in
+              <span class="p-1 px-2 btn-success">Mongodb</span> and likes to climb the trees and touch the leaves.</p>
+          </section>
+        </section>
+        <section class="card text-center m-2">
+          <!--Card image-->
+          <div class="view overlay hm-white-slight flex-center m-2">
+            <img src="https://s5.postimg.org/h5r7x84kz/express.png" class="img-fluid">
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+          <section class="card-block">
+            <h3 class="card-title">Jane Express</h3>
+            <p>
+              She loves to build routes to connect the pieces needed of the backend with
+              <span class="p-1 px-2 btn-info">ExpressJS</span>.
+            </p>
+          </section>
+        </section>
+        <section class="card text-center m-2">
+          <!--Card image-->
+          <div class="view overlay hm-white-slight flex-center m-2">
+            <img src="https://s5.postimg.org/l4ofg1t83/image.png" class="img-fluid">
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+          <section class="card-block">
+            <h3 class="card-title">Mary Angular</h3>
+            <p>
+              A person that is looking and tinkering the code in different
+              <span class="p-1 px-2 btn-pink text-white">angle</span>.
+            </p>
+          </section>
+        </section>
+        <section class="card text-center m-2">
+          <!--Card image-->
+          <div class="view overlay hm-white-slight flex-center m-2">
+            <img src="https://s5.postimg.org/8rbl953jn/node.png" class="img-fluid">
+            <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+          <section class="card-block">
+            <h3 class="card-title">John Node</h3>
+            <p>
+              He always say: Every
+              <span class="p-1 px-2 btn-dark-green text-white">Node</span> has a purpose and meaning and He likes the sky.</p>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- ./Speakers section -->
+    <!-- Schedules section -->
+    <section class="container my-4" id="schedules">
+      <h2 class="text-center">Schedules</h2>
+      <!--Carousel Wrapper-->
+      <div id="carouselSchedules" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view hm-black-strong">
+              <img src="https://static.pexels.com/photos/207691/pexels-photo-207691.jpeg" alt="Mongodb schedule: 8:00 am - 10:00 am">
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Mongodb</h3>
+              <p>8:00 am - 10:00 am</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view hm-black-strong">
+              <img src="https://static.pexels.com/photos/247839/pexels-photo-247839.jpeg" alt="Express schedule: 10:05 am - 12:00 pm">
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Express</h3>
+              <p>10:05 am - 12:00 pm</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view hm-black-strong">
+              <img src="https://static.pexels.com/photos/107527/pexels-photo-107527.jpeg" alt="Lunch schedule: 12:00 pm - 1:00 pm">
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Lunch</h3>
+              <p>12:00 pm - 1:00 pm</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view hm-black-strong">
+              <img src="https://static.pexels.com/photos/256491/pexels-photo-256491.jpeg" alt="Angular schedule: 1:00 pm - 3:00 pm">
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Angular</h3>
+              <p>1:05 pm - 3:00 pm</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view hm-black-strong">
+              <img src="https://static.pexels.com/photos/9285/wood-houses-school-old.jpg" alt="Angular schedule: 1:00 pm - 3:00 pm">
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Node</h3>
+              <p>3:00 pm - 5:00 pm</p>
+            </div>
+          </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carouselSchedules" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSchedules" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselSchedules" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSchedules" data-slide-to="1"></li>
+          <li data-target="#carouselSchedules" data-slide-to="2"></li>
+          <li data-target="#carouselSchedules" data-slide-to="3"></li>
+          <li data-target="#carouselSchedules" data-slide-to="4"></li>
+        </ol>
+        <!--/.Indicators-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    </section>
+    <!-- ./Schedules section -->
+		
+		<section class="container card flex-center bg-primary text-white my-4 p-4" id="register">
+				<h3>Learn something new</h3>
+				<button class="btn btn-purple" data-toggle="modal" data-target="#modal-subscription">Register now</button>
+		</section>
+
+    <!-- Footer section -->
+    <footer class="card p-4 container">
+      <div class="row">
+        <div class="col-md-8 text-center">
+        	Made with <span class="text-danger">❤</span> by 
+        	<a href="https://codepen.io/chpecson" target="_blank">Christian Pecson</a>
+        </div>
+        <div class="col-md-4 text-center">
+					<a href="https://github.com/chpecson" class="fa fa-github fa-2x mr-4" target="_blank"></a>
+					<a href="https://twitter.com/chpecson" class="fa fa-twitter fa-2x mr-4" target="_blank"></a>
+					<a href="https://facebook.com/chpecson" class="fa fa-facebook fa-2x mr-4" target="_blank"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- ./Footer section -->
+  </main>
+  
+  <!-- Modal Subscription -->
+  <div class="modal fade modal-ext" id="modal-subscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <h4 class="modal-title w-100" id="myModalLabel">Register</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <p>Have fun with learning new techniques about javascript.</p>
+          <br>
+          <div class="md-form">
+            <i class="fa fa-user prefix pt-1"></i>
+            <input type="text" id="name" class="form-control">
+            <label for="name">Your name</label>
+          </div>
+          <div class="md-form">
+            <i class="fa fa-envelope prefix pt-1"></i>
+            <input type="email" id="email" class="form-control">
+            <label for="email">Your email</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary">Count me in</button>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+</body>
+
+</html>
+
