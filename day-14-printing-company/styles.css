@@ -1,0 +1,116 @@
+:root {
+	--primary-color: #4F738E;
+	--secondary-color: #2C9DF4;
+	--success-color: #1893F2;
+	--info-color: #86B5D8;
+	--danger-color: #33658A;
+	--grey-color: rgba(0,0,0,0.4);
+	--white-color: rgba(255,255,255,0.8);
+
+	--gradient-primary-color: rgba(79,115,142,1);
+	--gradient-secondary-color: rgba(44,157,244,0.7);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	font-size: 400%;
+	letter-spacing: 2rem;
+	text-transform: uppercase;
+}
+h2 { text-align: center; }
+
+header {
+	background-color: var(--primary-color);
+	color: var(--success-color);
+	text-shadow: 0 10px 1rem var(--danger-color);
+	text-align: center;
+	padding: 40vh 0;
+}
+
+p.lead {
+	font-size: 200%;
+}
+
+main.container {
+	margin-top: 1rem;
+}
+
+.row > .card {
+	background-color: var(--grey-color);
+	border-radius: 1rem;
+	box-shadow: 2px 2px 5px 1px var(--grey-color);
+	color: var(--white-color);
+	padding: 10vh 0;
+	margin: 0 1rem;
+	transition: box-shadow 200ms cubic-bezier(0.2,0.5,0.8,0.2);
+	text-align: center;
+}
+.row > .card:hover {
+	box-shadow: 2px 2px 10px 1px var(--grey-color);
+}
+
+.card img {
+	height: 128px;
+	width: 128px;
+}
+
+.row { margin-top: 2rem; }
+.row:last-child { margin-bottom: 2rem; }
+
+#poster {
+	background: linear-gradient(45deg, var(--gradient-primary-color), var(--gradient-secondary-color)), url("https://static.pexels.com/photos/8865/pexels-photo.jpg") center fixed;
+	background-size: cover;
+	padding: 20vh;
+}
+
+#shirt {
+	background: linear-gradient(45deg, var(--gradient-primary-color), var(--gradient-secondary-color)), url("https://static.pexels.com/photos/157580/title-photo-logo-shirt-157580.jpeg") right center;
+	background-size: cover;
+	padding: 20vh;
+}
+
+#business-card {
+	background: linear-gradient(45deg, var(--gradient-primary-color), var(--gradient-secondary-color)), url("https://static.pexels.com/photos/253360/pexels-photo-253360.jpeg") center;
+	background-size: cover;
+	padding: 20vh;
+}
+
+#flyer {
+	background: linear-gradient(45deg, var(--gradient-primary-color), var(--gradient-secondary-color)), url("https://images.contentful.com/wm1n7oady8a5/flyers-on-white-table.jpg/b60817e3e285a116dd8afcdd360f18d6/flyers-on-white-table.jpg") center;
+	background-size: cover;
+	padding: 20vh;
+}
+#decal {
+	background: linear-gradient(45deg, var(--gradient-primary-color), var(--gradient-secondary-color)), url("http://www.webdepa-diet.com/wp-content/uploads/2016/06/chair-contemporary-wall-decal-sample-great-white-wallpaper-flower-smooth-stones-net-modern.jpg") center;
+	background-size: cover;
+	padding: 20vh;
+}
+#sign {
+	background: linear-gradient(45deg, var(--gradient-primary-color), var(--gradient-secondary-color)), url("https://s-media-cache-ak0.pinimg.com/originals/d0/6c/26/d06c26557e6c8e7ae74cd161c53cb187.gif") center;
+	background-size: cover;
+	padding: 20vh;
+}
+
+footer.container { margin-top: 5rem; }
+footer a { color: var(--secondary-color); }
+footer li { margin-left: 2rem; }
+
+footer input[type="text"]:focus {
+    border-color: var(--secondary-color);
+    outline: 0;
+}
+
+footer .column > .button-outline {
+	border: 0.1rem solid var(--secondary-color);
+	color: var(--secondary-color);
+	display: block;
+	width: 100%;
+}
+footer .column > .button-outline:hover {
+	border: 0.1rem solid var(--grey-color);
+	color: var(--grey-color);
+}
