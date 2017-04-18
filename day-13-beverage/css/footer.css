@@ -1,0 +1,29 @@
+footer {
+	background-color: var(--light-secondary-color);
+  padding: 2vh 0 2vh 10vw;  
+}
+
+footer > section { font-size: 120%; }
+footer > section:first-child{ margin-right: 10%; }
+footer > section:not(.clearfix) {
+	float: none;  
+}
+
+footer section:nth-child(2n) {
+  font-size: 2rem;
+ 	color: var(--ligh-tertiary-color);
+  margin-right: 2rem;
+  text-decoration: none;  
+}
+footer a {
+	color: inherit;
+  text-decoration: inherit;
+}
+
+.clearfix { clear: both; }
+
+@media only screen and (min-width: 1200px) {
+	footer > section:not(.clearfix) {
+    float: left;  
+  }  
+}

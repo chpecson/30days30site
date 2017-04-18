@@ -1,0 +1,17 @@
+/*
+ * Header styles
+ */
+
+.masthead {
+  background: linear-gradient(45deg, rgba(220, 200, 90, 0.97) 10%, rgba(219, 197, 81, 0.97) 90%), url("../images/beer-2.png") no-repeat center fixed;
+  background-size: contain;
+  font-size: 130%;
+  padding: 35vh 0;	
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+	.masthead {
+    background: linear-gradient(45deg, rgba(250, 240, 210, 0.9) 30%, rgba(219, 197, 81, 0.97) 70%), url("../images/beer-1.png") no-repeat left center fixed, url("../images/beer-2.png") no-repeat center, url("../images/beer-3.png") no-repeat right center fixed;
+  }  
+}

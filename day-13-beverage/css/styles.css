@@ -1,0 +1,196 @@
+/*
+ * Qucik CSS resets
+ */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+  padding: 0;  
+}
+
+body {
+	font-family: "Segoe UI", sans-serif;  
+	font-weight: 400;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.5rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1.5rem; }
+h5 { font-size: 1rem; }/*
+ * Colors
+ */
+:root {
+  --primary-color: #D4B701;
+  --secondary-color: #F4E300;
+  --tertiary-color: #030323;
+  
+  --light-secondary-color: #DBC551;
+  --light-tertiary-color: #F2EDCF;  
+}/*
+ * Navigation styles
+ */
+.mastnav {
+  padding: 1rem;
+  background-color: var(--light-tertiary-color);
+	box-shadow: 0 5px 10px 1px rgba(0,0,0,0.2);
+	position: fixed;	
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.mastnav a {
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.mastnav__brand {
+	display: block;
+  margin: 0 auto;
+  text-align: center;  
+	width: 100%;
+}
+
+.mastnav__brand > img {
+  display: inline-block;
+  height: 64px;
+	text-align: center;
+  vertical-align: middle;
+  width: 64px;
+}
+.mastnav__brand > img:hover {
+	animation: 200ms shake alternate 5;
+}
+
+@keyframes shake {
+	from {
+  	transform: rotate(0);
+  }
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(20deg); }
+	75% { transform: rotate(5deg); }
+  to {
+  	transform: scale(1) rotate(0deg);
+  }	  
+}
+
+.mastnav-links { display: block; }
+.mastnav-links__item { 
+	background-color: var(--light-secondary-color);
+  display: block;
+  margin: .2rem; 
+	padding: 1rem 2rem;
+  transition: background-color 200ms linear;
+  text-align: center;
+}		
+.mastnav-links__item:hover {
+	background-color: var(--primary-color);
+}
+
+a[id$=links] {
+	font-size: 2rem;
+	text-align: center;
+  width: 100%; 
+}
+
+.hide { display: none; }
+.show { display: block; }
+
+/* Wide screens: Laptops, Desktops */
+@media only screen and (min-width: 1200px) {
+	a[id$=links] {
+  	display: none;
+  }
+	.mastnav__brand { 
+  	display: inline-block; 
+  	width: auto;
+  }
+  .mastnav-links { display: inline-block; }
+  .mastnav-links__item { display: inline-block; }
+}
+
+/* Medium screens: tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Small screens: phones */
+@media only screen and (min-width: 468px) {
+}/*
+ * Header styles
+ */
+
+.masthead {
+  background: linear-gradient(45deg, rgba(220, 200, 90, 0.97) 10%, rgba(219, 197, 81, 0.97) 90%), url("https://s5.postimg.org/dbz73oqlz/beer-2.png") no-repeat center fixed;
+  background-size: contain;
+	box-shadow: 0 5px 10px 1px rgba(0,0,0,0.2);
+  font-size: 130%;
+	margin-bottom: 1rem;
+  padding: 35vh 0;	
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+	.masthead {
+    background: linear-gradient(45deg, rgba(250, 240, 210, 0.9) 30%, rgba(219, 197, 81, 0.97) 70%), url("https://s5.postimg.org/biwafd5fb/beer-1.png") no-repeat left center fixed, url("https://s5.postimg.org/dbz73oqlz/beer-2.png") no-repeat center, url("https://s5.postimg.org/fukw4dcc7/beer-3.png") no-repeat right center fixed;
+  }  
+}main {
+  margin: 0 auto;
+	width: 80%;  
+}.product {
+  border: 1px solid var(--primary-color);
+	box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.2);
+  display: inline-block;
+	margin: 1rem 2rem;
+  text-align: center;
+  width: 40%;
+}
+.product:hover { box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.3); }
+
+
+.product__header {
+	background-color: var(--light-secondary-color);
+  padding: 1rem 0;  
+}
+
+.product__content { padding: 1rem; }
+.product__content .product__content__image {
+	width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+	.product { 
+  	display: inline-block;
+  	width: 25%; 
+  }		  
+}footer {
+	background-color: var(--light-secondary-color);
+  padding: 2vh 0 2vh 10vw;  
+}
+
+footer > section { font-size: 120%; }
+footer > section:first-child{ margin-right: 10%; }
+footer > section:not(.clearfix) {
+	float: none;  
+}
+
+footer section:nth-child(2n) {
+  font-size: 2rem;
+ 	color: var(--ligh-tertiary-color);
+  margin-right: 2rem;
+  text-decoration: none;  
+}
+footer a {
+	color: inherit;
+  text-decoration: inherit;
+}
+
+.clearfix { clear: both; }
+
+@media only screen and (min-width: 1200px) {
+	footer > section:not(.clearfix) {
+    float: left;  
+  }  
+}

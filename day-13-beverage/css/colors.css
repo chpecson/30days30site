@@ -1,0 +1,11 @@
+/*
+ * Colors
+ */
+:root {
+  --primary-color: #D4B701;
+  --secondary-color: #F4E300;
+  --tertiary-color: #030323;
+  
+  --light-secondary-color: #DBC551;
+  --light-tertiary-color: #F2EDCF;  
+}
