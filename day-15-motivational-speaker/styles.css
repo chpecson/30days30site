@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+.masthead {
+	background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(50,100,200,1)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Aron_Ralston_on_Capitol_Peak_Winter_2003.JPG/1200px-Aron_Ralston_on_Capitol_Peak_Winter_2003.JPG") center;
+	background-size: cover;
+	box-shadow: 0 1px 10px #000;
+	color: #fff; 
+	padding: 45vh 0;
+	text-align: center;
+}
+.masthead > h1 { 
+	font-size: 400%;
+}
+.masthead > p {
+	font-size: 150%;
+}
+
+main > .row { margin: 1rem 0; }
+
+.card {
+	background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(50,100,200,1));
+	border: 0;
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 1px #000;	
+	color: #fff;
+	padding: 2rem!important;
+	margin: 1rem;
+}
+
+#more-info {
+	border-radius: 1rem;
+	box-shadow: 1px 2px 10px 1px #000;	
+	font-size: 250%;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+#more-info > p { margin: 0; }
+#more-info a { color: #08f; }
